@@ -1,0 +1,47 @@
+#songList{
+  width: 600rpx;
+  height: 100rpx;
+  background: white;
+  border: 1px solid #eee;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+  padding-left:30rpx; 
+}
+#songName{
+  font-size: 35rpx;
+  white-space:nowrap;
+}
+#artistName{
+  font-size: 30rpx;
+  color: #aaa;
+}
+/* 歌单头 */
+#songSheetHeader{
+  width: 100vw;
+  position: relative;
+  background: rgba(0,0,0,1);
+}
+.headerImg{
+  /* 模糊度 灰度 亮度*/
+   filter: blur(1px) grayscale(20%) brightness(50%);
+   width: 100vw;
+   height: 400rpx;
+}
+.titleName{
+  position: absolute;
+  top: 150rpx;
+  right:15rpx;
+  width: 300rpx;
+  color: white;
+}
+/* .description{
+  position: absolute;
+  top: 200rpx;
+  width: 100vw;
+  height: 100rpx;
+  padding: 30rpx;
+  margin: 30rpx;
+  color: black;
+  font-size: 28rpx;
+  overflow-wrap: hidden;
+} */
