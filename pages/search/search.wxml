@@ -1,0 +1,15 @@
+<view id='viewSearch'>
+  <view id='icon'></view>
+  <input id='inputSearch' type="text" placeholder-class="placeholder" 
+  placeholder='搜索歌曲、歌单、专辑' bindfocus='funFocus'  bindinput='fun_input'/>
+  <!-- bindblur='funCancel' -->
+</view>
+<view wx:if='{{!bGetFocus}}' id='viewHotSearch'>
+  <!--data-value供bindtap触发事件取值  -->
+  <view wx:for='{{hotWord}}' data-value='{{item.first}}' bindtap='fun_hotWord'>{{item.first}}</view>
+</view> 
+<button wx:else="{{!bGetFocus}}" id='btnCancel' bindtap='funCancel'>取消</button>
+<view wx:if="{{bGetFocus}}" id='songList' wx:for='{{songList}}' data-id='{{item.id}}' data-name='{{item.name}}' data-artistsName='{{item.artists[0].name}}' bindtap='fun_searchDetailsPage'>
+  <view id='songName'>{{item.name}}</view> 
+  <view id='artistName'>{{item.artists[0].name}}</view>
+</view>
