@@ -1,0 +1,27 @@
+.imgLunbo{
+  width: 100vw;
+}
+.title{
+  font-size: 30rpx;
+  margin: 20rpx;
+  height: 30rpx;
+  line-height: 40rpx;
+}
+.songList{
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.songBlock{
+  width: 350rpx; 
+  height: 370rpx;
+  margin: 5rpx;
+}
+.songBlock image{
+  width: 350rpx; 
+  height: 300rpx;
+}
+.songName{
+   font-size: 26rpx;
+}

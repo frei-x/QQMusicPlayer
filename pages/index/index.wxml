@@ -1,0 +1,13 @@
+<swiper autoplay='true' interval='2000' circular='false' indicator-dots='true' indicator-color='#fff' indicator-active-color='red'>
+  <swiper-item wx:for='{{arrImgSwiper}}'>
+   <image class='imgLunbo' src='{{item}}'></image>
+  </swiper-item>
+</swiper>
+<view class='title'>推荐歌单</view>
+  <view  class='songList'>
+      <view wx:for='{{indexSongSheet}}' bindtap="fun_details" data-songSheetId="{{item.id}}" class='songBlock'>
+        <image src='{{item.picUrl}}'></image>
+      <view class='songName'>{{item.name}}</view>
+  </view>
+</view>
+
