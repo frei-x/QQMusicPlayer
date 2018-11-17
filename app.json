@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/rank/rank",
+    "pages/details/details",
+    "pages/songSheet/songSheet"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#31c27c",
+    "navigationBarTitleText": "QQ音乐",
+    "navigationBarTextStyle":"black"
+  },
+    "tabBar": {
+      "HexColor": "red",
+      "selectedColor": "#0e0",
+      "backgroundColor": "#fff",
+      "position": "top",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "推荐"
+        },
+        {
+          "pagePath":  "pages/rank/rank",
+          "text": "排行榜"
+        },
+        {
+          "pagePath":"pages/search/search",
+          "text": "搜索"
+        }
+      ]
+    }
+}
